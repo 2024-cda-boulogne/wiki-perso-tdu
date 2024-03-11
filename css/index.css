@@ -1,49 +1,80 @@
-body{
-    margin: 0;
-    padding: 0;
-}
-
-.navbar {
-  overflow: hidden;
-  background-color: white;
-  position: relative;
-  padding-top: 10px;
-  margin-bottom: 10px;
+body {
+  margin: 0;
   padding: 0;
-  font-family: "Montserrat", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 600;
-  font-style: normal;
 }
 
-.navbar #links {
-  display: none;
+@media screen and (max-width: 900px) {
+  .navbar {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+  }
+
+  .navbar #links {
+    display: none;
+  }
+
+  .navbar a {
+    background-color: #354a5f;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+
+  .navbar a.icon {
+    background: #2b3d4f;
+    color: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+
+  .navbar a:hover {
+    background-color: #586174;
+    color: white;
+  }
+
+  .active {
+    background-color: #04aa6d;
+    color: white;
+  }
 }
 
-.navbar a {
-  background-color: #354a5f;
-  color: white;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
+@media screen and (min-width: 900px) {
+    .navbar{
+        display: flex;
+        justify-content: center;
+        background-color: #354a5f;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }
+    .navbar a.icon {
+        display: none;
+    }
 
-.navbar a.icon {
-  background: #2b3d4f;
-  color: white;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-.navbar a:hover {
-  background-color: #586174;
-  color: white;
-}
-
-.active {
-  background-color: #04aa6d;
-  color: white;
+    .btn-acceuil{
+        display: none;
+    }
+    
+    .navbar a,.navbar #links{
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .navbar #links a{
+        padding-right: 70px;
+    }
 }
