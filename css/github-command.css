@@ -1,0 +1,18 @@
+.code-container{
+    padding: 2rem;
+    border-radius: 20px;
+}
+.bash-text{
+    background-color: #2b3d4f;
+    border-top-left-radius: .578rem;
+    border-top-right-radius: .578rem;
+    padding: .578rem;
+    color: #bdc3c7;
+}
+
+.code-text{
+    padding: .750rem;
+    background-color: #95a6a7;
+    border-bottom-left-radius: .578rem;
+    border-bottom-right-radius: .578rem;
+}
