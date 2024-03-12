@@ -4,6 +4,15 @@ body {
   background-color: white;
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: 'Hind Madurai';
+  src: url(../font/HindMadurai-Regular.ttf);
+}
+
 @media screen and (max-width: 900px) {
   .navbar {
     overflow: hidden;
@@ -12,7 +21,7 @@ body {
     padding-top: 10px;
     margin-bottom: 10px;
     padding: 0;
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Montserrat';
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
@@ -92,7 +101,7 @@ body {
   }
   .titre{
     text-align: center;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Montserrat";
     font-optical-sizing: auto;
     font-weight: 600;
     font-style: normal;
