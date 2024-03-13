@@ -3,109 +3,107 @@ body {
     margin: 0;
 }
 @font-face {
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     src: url(../font/Montserrat-VariableFont_wght.ttf);
-  }
-  @font-face {
-    font-family: 'Hind Madurai';
-    src: url(../font/HindMadurai-Regular.ttf);
-  }
-
-  
-@media screen and (max-width: 900px) {
-    .code-container {
-        border-radius: 20px;
-        margin: 10px 0px 10px 0px;
-    }
-    .bash-text {
-        background-color: #2b3d4f;
-        border-top-left-radius: 0.578rem;
-        border-top-right-radius: 0.578rem;
-        padding: 0.578rem;
-        color: #bdc3c7;
-    }
-
-    .code-text {
-        padding: 0.75rem;
-        background-color: #95a6a7;
-        border-bottom-left-radius: 0.578rem;
-        border-bottom-right-radius: 0.578rem;
-    }
-
-    .banniere-container {
-        display: flex;
-        justify-content: center;
-    }
-
-    .banniere {
-        object-fit: fill;
-        width: 100%;
-        padding-top: 30px;
-    }
-
-    .navbar {
-        overflow: hidden;
-        background-color: white;
-        position: fixed;
-        top: 0;
-        width: 100%;
-        margin-bottom: 10px;
-        padding: 0;
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-weight: 600;
-        font-style: normal;
-    }
-
-    .navbar #links {
-        display: none;
-    }
-
-    .navbar a {
-        background-color: #354a5f;
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-    }
-
-    .navbar a.icon {
-        background: #2b3d4f;
-        color: white;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-
-    .navbar a:hover {
-        background-color: #586174;
-        color: white;
-    }
-
-    .active {
-        background-color: #04aa6d;
-        color: white;
-    }
-
-    .text {
-        margin-top: 3px;
-        font-family: "Hind Madurai", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        margin-bottom: 1px;
-        text-justify: auto;
-    }
-
-    .content {
-        margin: 1rem;
-    }
-    .repository-url {
-        color: #0366d6;
-        font-weight: bold;
-    }
 }
+@font-face {
+    font-family: "Hind Madurai";
+    src: url(../font/HindMadurai-Regular.ttf);
+}
+
+.code-container {
+    border-radius: 20px;
+    margin: 10px 0px 10px 0px;
+}
+.bash-text {
+    background-color: #2b3d4f;
+    border-top-left-radius: 0.578rem;
+    border-top-right-radius: 0.578rem;
+    padding: 0.578rem;
+    color: #bdc3c7;
+}
+
+.code-text {
+    padding: 0.75rem;
+    background-color: #95a6a7;
+    border-bottom-left-radius: 0.578rem;
+    border-bottom-right-radius: 0.578rem;
+}
+
+.banniere-container {
+    display: flex;
+    justify-content: center;
+}
+
+.banniere {
+    object-fit: fill;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.navbar #links {
+    display: none;
+}
+
+.navbar a {
+    background-color: #354a5f;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.navbar a.icon {
+    background: #2b3d4f;
+    color: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.navbar a:hover {
+    background-color: #586174;
+    color: white;
+}
+
+.active {
+    background-color: #04aa6d;
+    color: white;
+}
+
+.text {
+    margin-top: 3px;
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1px;
+    text-justify: auto;
+}
+
+.content {
+    margin: 1rem;
+}
+.repository-url {
+    color: #0366d6;
+    font-weight: bold;
+}
+
 @media screen and (min-width: 900px) {
     .navbar {
         display: flex;
@@ -120,39 +118,27 @@ body {
         display: none;
     }
 
+    .navbar a {
+        display: none;
+    }
+    .navbar .links,
+    .navbar #links {
+        display: flex;
+        color: white;
+        padding: 10px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
     .btn-acceuil {
         display: none;
     }
 
-    .navbar a,
-    .navbar #links {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-    }
     .navbar #links a {
         padding-right: 70px;
     }
 
-    .code-container {
-        border-radius: 20px;
-        margin: 10px 0px 20px 0px;
-
-    }
-    .bash-text {
-        background-color: #2b3d4f;
-        border-top-left-radius: 0.578rem;
-        border-top-right-radius: 0.578rem;
-        padding: 0.578rem;
-        color: #bdc3c7;
-    }
-
     .code-text {
-        padding: 0.75rem;
-        background-color: #95a6a7;
-        border-bottom-left-radius: 0.578rem;
-        border-bottom-right-radius: 0.578rem;
         margin-bottom: 1rem;
     }
 
@@ -161,26 +147,8 @@ body {
         justify-content: center;
     }
 
-    .banniere {
-        object-fit: fill;
-        width: 100%;
-        padding-top: 30px;
-    }
-    .text {
-        margin-top: 3px;
-        font-family: "Hind Madurai", sans-serif;
-        font-weight: 400;
-        font-style: normal;
-        margin-bottom: 1px;
-        text-justify: auto;
-    }
-
     .content {
         margin-right: 20rem;
         margin-left: 20rem;
-    }
-    .repository-url {
-        color: #0366d6;
-        font-weight: bold;
     }
 }

@@ -1,221 +1,281 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="../css/github-command.css" rel="stylesheet" />
-    <title>Wiki perso</title>
-</head>
-<header>
-    <nav class="navbar">
-        <a href="" class="btn-acceuil">Wiki Yoko</a>
-        <div id="links">
-            <a href="../html/index.html">Acceuil</a>
-            <a href="../html/github-command.html">Github</a>
-            <a href="../html/uml.html">UML</a>
-            <a href="">Merise</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="../css/github-command.css" rel="stylesheet" />
+        <title>Wiki perso</title>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="" class="btn-acceuil">Wiki Yoko</a>
+                <div id="links">
+                    <a class="links" href="../html/index.html">Acceuil</a>
+                    <a class="links" href="../html/github-command.html"
+                        >Github</a
+                    >
+                    <a class="links" href="../html/uml.html">UML</a>
+                    <a class="links" href="">Merise</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        viewBox="0 0 24 24"
+                        fill="#000000"
+                    >
+                        <path
+                            d="M4 18L20 18"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+                        <path
+                            d="M4 12L20 12"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+                        <path
+                            d="M4 6L20 6"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+                    </svg>
+                </a>
+            </nav>
+        </header>
+        <div class="banniere-container">
+            <img
+                src="../img/github_large-scaled.jpg"
+                class="banniere"
+                alt="banniere_github"
+            />
         </div>
-        <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="#000000">
-                <path d="M4 18L20 18" stroke="#000000" stroke-width="2" stroke-linecap="round" />
-                <path d="M4 12L20 12" stroke="#000000" stroke-width="2" stroke-linecap="round" />
-                <path d="M4 6L20 6" stroke="#000000" stroke-width="2" stroke-linecap="round" />
-            </svg>
-        </a>
-    </nav>
-</header>
-<body>
-    <div class="banniere-container">
-        <img src="../img/github_large-scaled.jpg" class="banniere" alt="banniere_github"/>
-    </div>
-    <section class="content">
-        <article class="text">
-            <p>
-                Git est un système de gestion de version distribuée largement utilisé dans le développement logiciel. Il permet de suivre l'évolution des fichiers d'un projet, de coordonner le travail collaboratif entre les membres d'une équipe et de revenir à des versions antérieures du code. Dans un projet Git, vous travaillerez généralement avec un dépôt central sur une plateforme telle que GitHub, GitLab, ou Bitbucket, tout en ayant une copie locale de votre code sur votre machine.
-            </p>
-            <br />
-            <p>Voici donc les 10 commandes de git les plus utilisés :</p>
-            <br />
+        <section class="content">
+            <article class="text">
+                <p>
+                    Git est un système de gestion de version distribuée
+                    largement utilisé dans le développement logiciel. Il permet
+                    de suivre l'évolution des fichiers d'un projet, de
+                    coordonner le travail collaboratif entre les membres d'une
+                    équipe et de revenir à des versions antérieures du code.
+                    Dans un projet Git, vous travaillerez généralement avec un
+                    dépôt central sur une plateforme telle que GitHub, GitLab,
+                    ou Bitbucket, tout en ayant une copie locale de votre code
+                    sur votre machine.
+                </p>
+                <br />
+                <p>Voici donc les 10 commandes de git les plus utilisés :</p>
+                <br />
 
-            <p style="font-weight: 600">
-                Initialisation du Projet avec `git init` ou `git clone`
-            </p>
+                <p style="font-weight: 600">
+                    Initialisation du Projet avec `git init` ou `git clone`
+                </p>
 
-            <section class="code-container">
-                <div class="dark bg-gray-950 rounded-md">
-                    <div class="bash-text">
-                        <span>bash</span>
+                <section class="code-container">
+                    <div class="dark bg-gray-950 rounded-md">
+                        <div class="bash-text">
+                            <span>bash</span>
+                        </div>
+                        <div class="code-text">
+                            <code class="">git init </code>
+                        </div>
                     </div>
-                    <div class="code-text">
-                        <code class="">git init </code>
-                    </div>
-                </div>
-                <article class="text">
-                    Utilisé pour créer un nouveau dépôt Git dans un répertoire existant sur votre machine.
-                </article>
-            </section>
+                    <article class="text">
+                        Utilisé pour créer un nouveau dépôt Git dans un
+                        répertoire existant sur votre machine.
+                    </article>
+                </section>
 
-            <section class="code-container">
-                <div class="dark bg-gray-950 rounded-md">
-                    <div class="bash-text">
-                        <span>bash</span>
+                <section class="code-container">
+                    <div class="dark bg-gray-950 rounded-md">
+                        <div class="bash-text">
+                            <span>bash</span>
+                        </div>
+                        <div class="code-text">
+                            <code class=""
+                                >git clone
+                                <span class="repository-url">URL_DU_DEPOT</span>
+                            </code>
+                        </div>
                     </div>
-                    <div class="code-text">
-                        <code class="">git clone
-                            <span class="repository-url">URL_DU_DEPOT</span>
-                        </code>
-                    </div>
-                </div>
-                <article class="text">
-                    Clone un dépôt existant depuis une URL, créant ainsi une copie locale du projet.
-                </article>
-            </section>
-            <p style="font-weight: 600">
-                Ajout et Enregistrement des Modifications avec git add et git commit
-            </p>
+                    <article class="text">
+                        Clone un dépôt existant depuis une URL, créant ainsi une
+                        copie locale du projet.
+                    </article>
+                </section>
+                <p style="font-weight: 600">
+                    Ajout et Enregistrement des Modifications avec git add et
+                    git commit
+                </p>
 
-            <section class="code-container">
-                <div class="dark bg-gray-950 rounded-md">
-                    <div class="bash-text">
-                        <span>bash</span>
+                <section class="code-container">
+                    <div class="dark bg-gray-950 rounded-md">
+                        <div class="bash-text">
+                            <span>bash</span>
+                        </div>
+                        <div class="code-text">
+                            <code class=""
+                                >git add
+                                <span class="repository-url">nom_fichier</span>
+                            </code>
+                        </div>
                     </div>
-                    <div class="code-text">
-                        <code class="">git add
-                            <span class="repository-url">nom_fichier</span>
-                        </code>
-                    </div>
-                </div>
-                <article class="text">
-                    Ajoute les modifications d'un fichier à la zone de préparation, signalant qu'elles seront incluses dans le prochain commit.
-                </article>
-            </section>
+                    <article class="text">
+                        Ajoute les modifications d'un fichier à la zone de
+                        préparation, signalant qu'elles seront incluses dans le
+                        prochain commit.
+                    </article>
+                </section>
 
-            <section class="code-container">
-                <div class="dark bg-gray-950 rounded-md">
-                    <div class="bash-text">
-                        <span>bash</span>
+                <section class="code-container">
+                    <div class="dark bg-gray-950 rounded-md">
+                        <div class="bash-text">
+                            <span>bash</span>
+                        </div>
+                        <div class="code-text">
+                            <code class=""
+                                >git commit -m "Message de commit"
+                            </code>
+                        </div>
                     </div>
-                    <div class="code-text">
-                        <code class="">git commit -m "Message de commit"
-                        </code>
-                    </div>
-                </div>
-                <article class="text">
-                    Enregistre les modifications ajoutées à la zone de préparation dans le dépôt avec un message de commit descriptif.
-                </article>
-            </section>
+                    <article class="text">
+                        Enregistre les modifications ajoutées à la zone de
+                        préparation dans le dépôt avec un message de commit
+                        descriptif.
+                    </article>
+                </section>
 
-            <p style="font-weight: 600">
-                Gestion des Branches avec git branch et git checkout
-            </p>
+                <p style="font-weight: 600">
+                    Gestion des Branches avec git branch et git checkout
+                </p>
 
-            <section class="code-container">
-                <div class="dark bg-gray-950 rounded-md">
-                    <div class="bash-text">
-                        <span>bash</span>
+                <section class="code-container">
+                    <div class="dark bg-gray-950 rounded-md">
+                        <div class="bash-text">
+                            <span>bash</span>
+                        </div>
+                        <div class="code-text">
+                            <code class=""
+                                >git branch
+                                <span class="repository-url">nom_branche</span>
+                            </code>
+                        </div>
                     </div>
-                    <div class="code-text">
-                        <code class="">git branch
-                            <span class="repository-url">nom_branche</span>
-                        </code>
-                    </div>
-                </div>
-                <article class="text">
-                    Crée une nouvelle branche pour travailler sur une fonctionnalité ou une correction de bug
-                </article>
-            </section>
+                    <article class="text">
+                        Crée une nouvelle branche pour travailler sur une
+                        fonctionnalité ou une correction de bug
+                    </article>
+                </section>
 
-            <section class="code-container">
-                <div class="dark bg-gray-950 rounded-md">
-                    <div class="bash-text">
-                        <span>bash</span>
+                <section class="code-container">
+                    <div class="dark bg-gray-950 rounded-md">
+                        <div class="bash-text">
+                            <span>bash</span>
+                        </div>
+                        <div class="code-text">
+                            <code class=""
+                                >git checkout
+                                <span class="repository-url">nom_branche</span>
+                            </code>
+                        </div>
                     </div>
-                    <div class="code-text">
-                        <code class="">git checkout
-                            <span class="repository-url">nom_branche</span>
-                        </code>
-                    </div>
-                </div>
-                <article class="text">
-                    Bascule entre les branches existantes pour travailler sur une branche spécifique
-                </article>
-            </section>
+                    <article class="text">
+                        Bascule entre les branches existantes pour travailler
+                        sur une branche spécifique
+                    </article>
+                </section>
 
-            <p style="font-weight: 600">
-                Fusion des Branches avec git merge 
-            </p>
+                <p style="font-weight: 600">
+                    Fusion des Branches avec git merge
+                </p>
 
-            <section class="code-container">
-                <div class="dark bg-gray-950 rounded-md">
-                    <div class="bash-text">
-                        <span>bash</span>
+                <section class="code-container">
+                    <div class="dark bg-gray-950 rounded-md">
+                        <div class="bash-text">
+                            <span>bash</span>
+                        </div>
+                        <div class="code-text">
+                            <code class=""
+                                >git merge
+                                <span class="repository-url">nom_branche</span>
+                            </code>
+                        </div>
                     </div>
-                    <div class="code-text">
-                        <code class="">git merge
-                            <span class="repository-url">nom_branche</span>
-                        </code>
-                    </div>
-                </div>
-                <article class="text">
-                    Fusionne une branche spécifiée dans la branche actuelle une fois le travail terminé
-                </article>
-            </section>
+                    <article class="text">
+                        Fusionne une branche spécifiée dans la branche actuelle
+                        une fois le travail terminé
+                    </article>
+                </section>
 
-            <p style="font-weight: 600">
-                Synchronisation avec le Dépôt Central avec git pull et git push
-            </p>
+                <p style="font-weight: 600">
+                    Synchronisation avec le Dépôt Central avec git pull et git
+                    push
+                </p>
 
-            <section class="code-container">
-                <div class="dark bg-gray-950 rounded-md">
-                    <div class="bash-text">
-                        <span>bash</span>
+                <section class="code-container">
+                    <div class="dark bg-gray-950 rounded-md">
+                        <div class="bash-text">
+                            <span>bash</span>
+                        </div>
+                        <div class="code-text">
+                            <code class=""
+                                >git pull origin
+                                <span class="repository-url">nom_branche</span>
+                            </code>
+                        </div>
                     </div>
-                    <div class="code-text">
-                        <code class="">git pull origin
-                            <span class="repository-url">nom_branche</span>
-                        </code>
-                    </div>
-                </div>
-                <article class="text">
-                    Récupère les changements depuis le dépôt distant et fusionne avec la branche locale en cours.
-                </article>
-            </section>
+                    <article class="text">
+                        Récupère les changements depuis le dépôt distant et
+                        fusionne avec la branche locale en cours.
+                    </article>
+                </section>
 
-            <section class="code-container">
-                <div class="dark bg-gray-950 rounded-md">
-                    <div class="bash-text">
-                        <span>bash</span>
+                <section class="code-container">
+                    <div class="dark bg-gray-950 rounded-md">
+                        <div class="bash-text">
+                            <span>bash</span>
+                        </div>
+                        <div class="code-text">
+                            <code class=""
+                                >git push origin
+                                <span class="repository-url">nom_branche</span>
+                            </code>
+                        </div>
                     </div>
-                    <div class="code-text">
-                        <code class="">git push origin
-                            <span class="repository-url">nom_branche</span>
-                        </code>
-                    </div>
-                </div>
-                <article class="text">
-                    Pousse les modifications locales vers le dépôt distant, permettant ainsi la collaboration avec d'autres contributeurs.
-                </article>
-            </section>
+                    <article class="text">
+                        Pousse les modifications locales vers le dépôt distant,
+                        permettant ainsi la collaboration avec d'autres
+                        contributeurs.
+                    </article>
+                </section>
 
-            <p style="font-weight: 600">
-                Historique des Commits avec git log
-            </p>
+                <p style="font-weight: 600">
+                    Historique des Commits avec git log
+                </p>
 
-            <section class="code-container">
-                <div class="dark bg-gray-950 rounded-md">
-                    <div class="bash-text">
-                        <span>bash</span>
+                <section class="code-container">
+                    <div class="dark bg-gray-950 rounded-md">
+                        <div class="bash-text">
+                            <span>bash</span>
+                        </div>
+                        <div class="code-text">
+                            <code class="">git log </code>
+                        </div>
                     </div>
-                    <div class="code-text">
-                        <code class="">git log
-                        </code>
-                    </div>
-                </div>
-                <article class="text">
-                    Consulte l'historique des commits pour suivre l'évolution du projet, les auteurs, et les messages associés à chaque changement.                    </article>
-            </section>
-        </article>
-    </section>
-    <script src="../js/index.js"></script>
-</body>
+                    <article class="text">
+                        Consulte l'historique des commits pour suivre
+                        l'évolution du projet, les auteurs, et les messages
+                        associés à chaque changement.
+                    </article>
+                </section>
+            </article>
+        </section>
+        <script src="../js/index.js"></script>
+    </body>
 </html>
