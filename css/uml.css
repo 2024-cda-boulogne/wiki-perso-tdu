@@ -1,0 +1,85 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url(../font/Montserrat-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: 'Hind Madurai';
+    src: url(../font/HindMadurai-Regular.ttf);
+  }
+
+
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.navbar #links {
+    display: none;
+}
+
+.navbar a {
+    background-color: #354a5f;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.navbar a.icon {
+    background: #2b3d4f;
+    color: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.navbar a:hover {
+    background-color: #586174;
+    color: white;
+}
+
+.active {
+    background-color: #04aa6d;
+    color: white;
+}
+
+h1{
+    font-family: "Montserrat";
+}
+
+p{
+    margin-top: 2rem;
+    font-family: "Hind Madurai";
+    justify-content: baseline;
+}
+
+.container{
+    padding: 50px 1rem 50px 1rem;
+    
+}
+
+#logo-uml{
+    width: 50%;
+    float: left;
+    margin-right: 1rem;
+}
+
+.img-uml{
+    width: 100%
+}

@@ -137,7 +137,8 @@ body {
 
     .code-container {
         border-radius: 20px;
-        margin: 10px 0px 10px 0px;
+        margin: 10px 0px 20px 0px;
+
     }
     .bash-text {
         background-color: #2b3d4f;
@@ -152,6 +153,7 @@ body {
         background-color: #95a6a7;
         border-bottom-left-radius: 0.578rem;
         border-bottom-right-radius: 0.578rem;
+        margin-bottom: 1rem;
     }
 
     .banniere-container {
@@ -174,7 +176,8 @@ body {
     }
 
     .content {
-        margin: 1rem;
+        margin-right: 20rem;
+        margin-left: 20rem;
     }
     .repository-url {
         color: #0366d6;
