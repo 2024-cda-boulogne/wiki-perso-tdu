@@ -1,51 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link href="../css/index.css" rel="stylesheet" />
         <title>Wiki perso</title>
     </head>
-    <header>
-        <div class="navbar">
-            <a href="" class="btn-acceuil">Wiki Yoko</a>
-            <div id="links">
-                <a href="../html/index.html">Acceuil</a>
-                <a href="../html/github-command.html">Github</a>
-                <a href="">UML</a>
-                <a href="">Merise</a>
-            </div>
-            <a href="javascript:void(0);" class="icon" onclick="openMenu()">
-                <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="20px"
-                    height="20px"
-                    viewBox="0 0 24 24"
-                    fill="#000000"
-                >
-                    <path
-                        d="M4 18L20 18"
-                        stroke="#000000"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                    />
-                    <path
-                        d="M4 12L20 12"
-                        stroke="#000000"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                    />
-                    <path
-                        d="M4 6L20 6"
-                        stroke="#000000"
-                        stroke-width="2"
-                        stroke-linecap="round"
-                    />
-                </svg>
-            </a>
-        </div>
-    </header>
     <body>
+        <header>
+            <nav class="navbar">
+                <a href="" class="btn-acceuil">Wiki Yoko</a>
+                <div id="links">
+                    <a class="links" href="../html/index.html">Acceuil</a>
+                    <a class="links" href="../html/github-command.html"
+                        >Github</a
+                    >
+                    <a class="links" href="../html/uml.html">UML</a>
+                    <a class="links" href="">Merise</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        viewBox="0 0 24 24"
+                        fill="#000000"
+                    >
+                        <path
+                            d="M4 18L20 18"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+                        <path
+                            d="M4 12L20 12"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+                        <path
+                            d="M4 6L20 6"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+                    </svg>
+                </a>
+            </nav>
+        </header>
         <div class="container">
             <h1 class="titre">Acceuil</h1>
             <div class="picture">
@@ -315,10 +317,6 @@
                 </div>
             </div>
         </div>
+        <script src="../js/index.js"></script>
     </body>
-    <footer>
-        <div class="container-footer"></div>
-    </footer>
-
-    <script src="../js/index.js"></script>
 </html>
