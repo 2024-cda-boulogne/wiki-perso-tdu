@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(../font/Montserrat-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: "Hind Madurai";
+    src: url(../font/HindMadurai-Regular.ttf);
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: white;
+    position: relative;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    padding: 0;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-style: normal;
+}
+
+.navbar #links {
+    display: none;
+}
+
+.navbar a {
+    background-color: #354a5f;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+.navbar a.icon {
+    background: #2b3d4f;
+    color: white;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.navbar a:hover {
+    background-color: #586174;
+    color: white;
+}
+
+.active {
+    background-color: #04aa6d;
+    color: white;
+}
+
+#logo-merise{
+    width: 200px;
+    float: left;
+}
+
+h1 {
+    font-family: "Montserrat";
+    padding-top: 3rem;
+}
+
+h3{
+    font-family: "Montserrat";
+    margin-top: 5rem;
+}
+
+p {
+    margin-top: 3rem;
+    font-family: "Hind Madurai";
+    justify-content: baseline;
+}
+
+.container {
+    padding: 10px 1rem 50px 1rem;
+}
