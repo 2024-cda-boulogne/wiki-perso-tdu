@@ -7,7 +7,9 @@ function openMenu() {
     }
 }
 
-document.querySelector(".btToggle").addEventListener("click", changeThemeMode);
+document
+    .querySelector("#theme-mode")
+    .addEventListener("change", changeThemeMode);
 
 function changeThemeMode() {
     console.log("test");
