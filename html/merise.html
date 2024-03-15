@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="../css/merise.css" rel="stylesheet" />
+        <title>Wiki perso</title>
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="" class="btn-acceuil">Wiki Yoko</a>
+                <div id="links">
+                    <a class="links" href="../html/index.html">Acceuil</a>
+                    <a class="links" href="../html/github-command.html"
+                        >Github</a
+                    >
+                    <a class="links" href="../html/uml.html">UML</a>
+                    <a class="links" href="../html/merise.html">Merise</a>
+                    
+                </div>
+
+                <div class="theme-toggle">
+                    <label class="theme-label" for="theme-mode"
+                        >Dark mode
+
+                        <span class="theme-switch">
+                            <input
+                                type="checkbox"
+                                name="theme-mode"
+                                id="theme-mode"
+                            />
+                            <span class="theme-slider"></span>
+                        </span>
+                    </label>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="openMenu()">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="20px"
+                        height="20px"
+                        viewBox="0 0 24 24"
+                        fill="#000000"
+                    >
+                        <path
+                            d="M4 18L20 18"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+                        <path
+                            d="M4 12L20 12"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+                        <path
+                            d="M4 6L20 6"
+                            stroke="#000000"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                        />
+                    </svg>
+                </a>
+            </nav>
+        </header>
+        <div class="container">
+            <img
+                src="../img/merise.png"
+                id="logo-merise"
+                alt="Logo de la méthode merise"
+            />
+            <section>
+                <h1>La méthode Merise</h1>
+                <h3>Qu'est ce que la méthode Merise?</h3>
+                <p>
+                    La méthode Merise est une approche de modélisation de
+                    système d'information qui a été largement utilisée dans les
+                    années 1970 et 1980. Elle se concentre sur la structuration
+                    et la formalisation des données, des processus et des
+                    contraintes d'un système d'information. La méthode Merise
+                    utilise des modèles conceptuels, logiques et physiques pour
+                    représenter les différents aspects d'un système, ce qui
+                    facilite la conception, la gestion et l'évolution des
+                    systèmes d'information.
+                </p>
+            </section>
+            <section>
+                <h3>Dictionnaire de données</h3>
+                <img
+                    src="../img/dico_donnees.jpg"
+                    alt="Dictionnaire de données"
+                    class="img-merise"
+                />
+                <p>
+                    C'est une étape intermédiaire qui peut avoir son importance,
+                    surtout si vous êtes plusieurs à travailler sur une même
+                    base de données, d'un volume important.
+                </p>
+                <p>
+                    Le dictionnaire des données est un document qui regroupe
+                    toutes les données que vous aurez à conserver dans votre
+                    base (et qui figureront donc dans le MCD). Pour chaque
+                    donnée, il indique&nbsp;:
+                </p>
+                <ul>
+                    <li>
+                        le <b>code mnémonique&nbsp;:</b> il s'agit d'un libellé
+                        désignant une donnée (par exemple «<span
+                            class="italique"
+                            >titre_l</span
+                        >» pour le titre d'un livre)&nbsp;;
+                    </li>
+                    <li>
+                        la <b>désignation&nbsp;:</b> il s'agit d'une mention
+                        décrivant ce à quoi la donnée correspond (par exemple
+                        «<span class="italique">titre du livre</span>»)&nbsp;;
+                    </li>
+                    <li>
+                        <span>le <b>type de donnée&nbsp;:</b></span>
+                        <ul>
+                            <li>
+                                <b>A </b>ou<b> Alphabétique&nbsp;:</b> lorsque
+                                la donnée est uniquement composée de caractères
+                                alphabétiques (de 'A' à 'Z' et de 'a' à 'z'),
+                            </li>
+                            <li>
+                                <b>N </b>ou<b> Numérique&nbsp;:</b> lorsque la
+                                donnée est composée uniquement de nombres
+                                (entiers ou réels),
+                            </li>
+                            <li>
+                                <b>AN </b>ou<b> Alphanumérique&nbsp;:</b>
+                                lorsque la donnée peut être composée à la fois
+                                de caractères alphabétiques et numériques,
+                            </li>
+                            <li>
+                                <b>Date&nbsp;:</b> lorsque la donnée est une
+                                date (au format AAAA-MM-JJ),
+                            </li>
+                            <li><b>Booléen&nbsp;:</b> Vrai ou Faux&nbsp;;</li>
+                            <li>
+                                <b>TEXT&nbsp;:</b> lorsque la donnée est une
+                                chaîne de caractères.
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        la <b>taille&nbsp;:</b> elle s'exprime en nombre de
+                        caractères ou de chiffres. Dans le cas d'une date au
+                        format AAAA-JJ-MM, on compte également le nombre de
+                        caractères, soit 10 caractères. Pour ce qui est du type
+                        booléen, nul besoin de préciser la taille (ceci dépend
+                        de l'implémentation du SGBDR)&nbsp;;
+                    </li>
+                    <li>
+                        et parfois des <b>remarques</b> ou
+                        <b>observations</b> complémentaires (par exemple si une
+                        donnée est strictement supérieure à 0, etc.).
+                    </li>
+                </ul>
+                &nbsp;
+                <hr>
+            </section>
+         
+            <section>
+                <h3>Modèle conceptuel de données (MCD)</h3>
+                <img
+                    src="../img/mcd.png"
+                    alt="Exemple de modéle conceptuel de données"
+                    class="img-merise"
+                />
+                <p>
+                    Le Modèle Conceptuel de Données (MCD) est une composante
+                    essentielle de la méthode Merise en ingénierie des systèmes
+                    d'information. Il offre une représentation abstraite et
+                    structurée des données, mettant en lumière les entités,
+                    leurs attributs et les relations les liant.
+                </p>
+                <p>
+                    Grâce à sa clarté et sa concision, le MCD permet aux
+                    analystes et aux développeurs de comprendre rapidement la
+                    structure et les interactions des données au sein du
+                    système.
+                </p>
+                <p>
+                    En intégrant des concepts tels que les entités, les
+                    associations, les cardinalités et les dépendances
+                    fonctionnelles, le MCD fournit un cadre solide pour
+                    concevoir des bases de données efficaces et évolutives.
+                </p>
+                <p>
+                    Il garantit ainsi la cohérence et l'intégrité des données
+                    tout au long du cycle de vie du projet, assurant une gestion
+                    optimale des informations et une meilleure prise de
+                    décision.
+                </p>
+                &nbsp;
+                <hr>
+            </section>
+            <section>
+                <h3>Modèle logique de données (MLD)</h3>
+                <img
+                    src="../img/mld.png"
+                    alt="Exemple de passage d'un MCD à un MLD"
+                    class="img-merise"
+                />
+                <p>
+                    Une fois le Modèle Conceptuel de Données (MCD) établi, la
+                    méthode Merise poursuit avec le Modèle Logique de Données
+                    (MLD). Ce dernier représente une étape cruciale dans le
+                    processus de conception des bases de données, car il traduit
+                    les concepts abstraits du MCD en structures de données plus
+                    concrètes, généralement sous forme de schémas relationnels.
+                </p>
+                <p>
+                    Le passage du MCD au MLD implique une transformation des
+                    entités en tables, des attributs en colonnes et des
+                    associations en clés étrangères. Les cardinalités définies
+                    dans le MCD orientent également la création des relations et
+                    des contraintes d'intégrité dans le MLD.
+                </p>
+                <p>
+                    insi, le MLD constitue une étape de raffinement du modèle
+                    conceptuel, où les détails techniques et les spécificités de
+                    la base de données sont pris en compte. Cette transition
+                    permet de passer d'une vision conceptuelle à une
+                    représentation plus opérationnelle, facilitant la mise en
+                    œuvre et la gestion des données dans le système
+                    informatique.
+                </p>
+                &nbsp;
+                <hr>
+            </section>
+            <section>
+                <h3>Modèle physique de données (MPD)</h3>
+                <img
+                    src="../img/Mpd.PNG"
+                    class="img-merise"
+                    alt="Modèle physique de données"
+                />
+                <p>
+                    Après la réalisation du Modèle Logique de Données (MLD), la
+                    méthode Merise poursuit avec la conception du Modèle
+                    Physique de Données (MPD). Contrairement au MLD, qui reste
+                    principalement abstrait et indépendant du système de gestion
+                    de base de données (SGBD) choisi, le MPD se concentre sur la
+                    mise en œuvre concrète des structures de données dans un
+                    environnement spécifique.
+                </p>
+                <p>
+                    Le MPD traduit les structures définies dans le MLD en un
+                    schéma de base de données réel, prenant en compte les
+                    caractéristiques et les contraintes propres au SGBD
+                    sélectionné. Cela inclut des aspects tels que les types de
+                    données, les index, les clés de contrainte, les règles
+                    d'intégrité et d'autres paramètres de configuration
+                    spécifiques au SGBD.
+                </p>
+                <p>
+                    Cette étape de conception détaillée garantit une
+                    implémentation efficace et optimisée de la base de données,
+                    en tenant compte des performances, de la sécurité et de la
+                    maintenabilité du système. Le MPD constitue ainsi le lien
+                    final entre la modélisation des données et leur déploiement
+                    opérationnel dans un environnement informatique réel.
+                </p>
+            </section>
+        </div>
+        <script src="../js/index.js"></script>
+    </body>
+</html>

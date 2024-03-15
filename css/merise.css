@@ -1,7 +1,9 @@
 body {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    background-color: white;
 }
+
 @font-face {
     font-family: "Montserrat";
     src: url(../font/Montserrat-VariableFont_wght.ttf);
@@ -11,46 +13,14 @@ body {
     src: url(../font/HindMadurai-Regular.ttf);
 }
 
-.code-container {
-    border-radius: 20px;
-    margin: 10px 0px 10px 0px;
-}
-.bash-text {
-    background-color: #2b3d4f;
-    border-top-left-radius: 0.578rem;
-    border-top-right-radius: 0.578rem;
-    padding: 0.578rem;
-    color: #bdc3c7;
-}
-
-.code-text {
-    padding: 0.75rem;
-    background-color: #95a6a7;
-    border-bottom-left-radius: 0.578rem;
-    border-bottom-right-radius: 0.578rem;
-}
-
-.banniere-container {
-    display: flex;
-    justify-content: center;
-}
-
-.banniere {
-    object-fit: fill;
-    width: 100%;
-    padding-top: 30px;
-}
-
 .navbar {
     overflow: hidden;
     background-color: white;
-    position: fixed;
-    top: 0;
-    width: 100%;
+    position: relative;
+    padding-top: 10px;
     margin-bottom: 10px;
     padding: 0;
-    font-family: "Montserrat", sans-serif;
-    font-optical-sizing: auto;
+    font-family: "Montserrat";
     font-weight: 600;
     font-style: normal;
 }
@@ -87,21 +57,40 @@ body {
     color: white;
 }
 
-.text {
-    margin-top: 3px;
-    font-family: "Hind Madurai", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    margin-bottom: 1px;
-    text-justify: auto;
+#logo-merise {
+    width: 200px;
+    float: left;
 }
 
-.content {
-    margin: 1rem;
+h1 {
+    font-family: "Montserrat";
+    padding-top: 3rem;
 }
-.repository-url {
-    color: #0366d6;
-    font-weight: bold;
+
+h3 {
+    font-family: "Montserrat";
+    margin-top: 5rem;
+}
+
+p {
+    margin-top: 3rem;
+    font-family: "Hind Madurai";
+    justify-content: baseline;
+}
+
+.container {
+    padding: 10px 1rem 50px 1rem;
+}
+
+.img-merise {
+    width: 100%;
+    height: auto;
+}
+
+ul,
+li {
+    font-family: "Hind Madurai";
+    margin-top: 5px;
 }
 .theme-toggle .theme-switch {
     position: relative;
@@ -160,22 +149,24 @@ body {
 
 .darkmode {
     background-color: #2f3136;
+    color: #ffffff;
+}
+
+.darkmode img {
+    background-color: white;
+}
+
+.darkmode .navbar {
     color: white;
-    fill: white;
+    background-color: dark;
 }
-
-.darkmode .code-text{
-    color: black;
-}
-
-.theme-toggle {
+.theme-toggle{
     background-color: #354a5f;
     color: white;
     padding: 0.3rem 0 1rem 1rem;
 }
-.banniere-container{
-    padding-top: 6rem;
-}
+
+
 @media screen and (min-width: 900px) {
     .navbar {
         display: flex;
@@ -208,18 +199,18 @@ body {
     .navbar #links a {
         padding-right: 70px;
     }
-    .code-text {
-        margin-bottom: 1rem;
+    .img-merise {
+        width: 100%;
+        
     }
 
-    .banniere-container {
+    .container {
         display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
         justify-content: center;
-    }
-
-    .content {
-        margin-right: 20rem;
         margin-left: 20rem;
+        margin-right: 20rem;
     }
 
     .theme-toggle {
@@ -227,5 +218,4 @@ body {
         padding-top: 10px;
         margin-right: 10px;
     }
-
 }
