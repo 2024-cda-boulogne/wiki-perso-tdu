@@ -187,7 +187,6 @@ li {
     .navbar #links {
         display: flex;
         color: white;
-        padding: 10px 16px;
         text-decoration: none;
         font-size: 17px;
     }
@@ -197,6 +196,7 @@ li {
     }
 
     .navbar #links a {
+        padding-top: 22px;
         padding-right: 70px;
     }
     .img-merise {
@@ -215,7 +215,7 @@ li {
 
     .theme-toggle {
         margin-left: auto;
-        padding-top: 10px;
+        padding-top: 15px;
         margin-right: 10px;
     }
 }
