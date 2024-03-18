@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="../css/github-command.css" rel="stylesheet" />
+        <link href="../css/index.css" rel="stylesheet" />
         <title>Wiki perso</title>
     </head>
 
@@ -18,6 +18,8 @@
                     >
                     <a class="links" href="../html/uml.html">UML</a>
                     <a class="links" href="../html/merise.html">Merise</a>
+                    <a class="links" id="about">A propos</a>
+
                     <div class="theme-toggle">
                         <label class="theme-label" for="theme-mode"
                             >Dark mode
@@ -80,7 +82,7 @@
             </svg>
         </div>
         <section class="content">
-            <article class="text">
+            <article class="text-git">
                 <p>
                     Git est un système de gestion de version distribuée
                     largement utilisé dans le développement logiciel. Il permet
@@ -109,7 +111,7 @@
                             <code class="">git init </code>
                         </div>
                     </div>
-                    <article class="text">
+                    <article class="text-git">
                         Utilisé pour créer un nouveau dépôt Git dans un
                         répertoire existant sur votre machine.
                     </article>
@@ -127,7 +129,7 @@
                             </code>
                         </div>
                     </div>
-                    <article class="text">
+                    <article class="text-git">
                         Clone un dépôt existant depuis une URL, créant ainsi une
                         copie locale du projet.
                     </article>
@@ -149,7 +151,7 @@
                             </code>
                         </div>
                     </div>
-                    <article class="text">
+                    <article class="text-git">
                         Ajoute les modifications d'un fichier à la zone de
                         préparation, signalant qu'elles seront incluses dans le
                         prochain commit.
@@ -167,7 +169,7 @@
                             </code>
                         </div>
                     </div>
-                    <article class="text">
+                    <article class="text-git">
                         Enregistre les modifications ajoutées à la zone de
                         préparation dans le dépôt avec un message de commit
                         descriptif.
@@ -190,7 +192,7 @@
                             </code>
                         </div>
                     </div>
-                    <article class="text">
+                    <article class="text-git">
                         Crée une nouvelle branche pour travailler sur une
                         fonctionnalité ou une correction de bug
                     </article>
@@ -208,7 +210,7 @@
                             </code>
                         </div>
                     </div>
-                    <article class="text">
+                    <article class="text-git">
                         Bascule entre les branches existantes pour travailler
                         sur une branche spécifique
                     </article>
@@ -230,7 +232,7 @@
                             </code>
                         </div>
                     </div>
-                    <article class="text">
+                    <article class="text-git">
                         Fusionne une branche spécifiée dans la branche actuelle
                         une fois le travail terminé
                     </article>
@@ -253,7 +255,7 @@
                             </code>
                         </div>
                     </div>
-                    <article class="text">
+                    <article class="text-git">
                         Récupère les changements depuis le dépôt distant et
                         fusionne avec la branche locale en cours.
                     </article>
@@ -271,7 +273,7 @@
                             </code>
                         </div>
                     </div>
-                    <article class="text">
+                    <article class="text-git">
                         Pousse les modifications locales vers le dépôt distant,
                         permettant ainsi la collaboration avec d'autres
                         contributeurs.
@@ -283,15 +285,13 @@
                 </p>
 
                 <section class="code-container">
-                    <div class="dark bg-gray-950 rounded-md">
                         <div class="bash-text">
                             <span>bash</span>
                         </div>
                         <div class="code-text">
                             <code class="">git log </code>
                         </div>
-                    </div>
-                    <article class="text">
+                    <article class="text-git">
                         Consulte l'historique des commits pour suivre
                         l'évolution du projet, les auteurs, et les messages
                         associés à chaque changement.
@@ -299,6 +299,38 @@
                 </section>
             </article>
         </section>
+        <dialog id="favDialog">
+            <div class="picture">
+                <div class="picture-content">
+                    <figure>
+                        <img
+                            src="../img/20240311_102232.jpg"
+                            alt="Portrait du GOAT"
+                        />
+                        <figcaption>Théo Duflos</figcaption>
+                    </figure>
+                    <p>
+                        Nationalité : Française
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="8"
+                        >
+                            <rect width="12" height="8" fill="#ED2939" />
+                            <rect width="8" height="8" fill="#fff" />
+                            <rect width="4" height="8" fill="#002395" />
+                        </svg>
+                    </p>
+                    <p>Date de Naissance :</p>
+                    <p class="date-text">07 Juin 2001 (22 ans)</p>
+                    <br />
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="btn-modal">Fermer</button>
+            </div>
+            
+        </dialog>
         <script src="../js/index.js"></script>
     </body>
 </html>

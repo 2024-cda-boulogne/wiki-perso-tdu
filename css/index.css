@@ -81,7 +81,7 @@ figure {
     margin: auto;
 }
 
-img {
+.img-about {
     max-width: 220px;
 }
 
@@ -96,7 +96,7 @@ figcaption {
 .picture-content p {
     padding-left: 5px;
 }
-.titre {
+.titre-main {
     text-align: center;
     font-family: "Montserrat";
     font-weight: 600;
@@ -116,7 +116,7 @@ p {
     color: #586174;
 }
 
-.text {
+.text-main {
     text-justify: auto;
     padding: 10px 4px 10px 4px;
 }
@@ -127,14 +127,14 @@ p {
     margin-top: 1rem;
 }
 
-.title-content {
+.title-content-main {
     text-align: center;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
 
-.container {
+.container-main {
     padding: 3rem;
 }
 
@@ -204,6 +204,217 @@ p {
     padding: 0.3rem 0 1rem 1rem;
 }
 
+:modal {
+    background-color: whote;
+    border: 2px solid #354a5f;
+    border-radius: 5px;
+}
+
+.btn-modal{
+    background-color: #354a5f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+
+#about{
+    cursor:pointer
+}
+
+.code-container {
+    border-radius: 20px;
+    margin: 10px 0px 10px 0px;
+}
+.bash-text {
+    background-color: #2b3d4f;
+    border-top-left-radius: 0.578rem;
+    border-top-right-radius: 0.578rem;
+    padding: 0.578rem;
+    color: #bdc3c7;
+}
+
+.code-text {
+    padding: 0.75rem;
+    background-color: #95a6a7;
+    border-bottom-left-radius: 0.578rem;
+    border-bottom-right-radius: 0.578rem;
+}
+
+.banniere-container {
+    display: flex;
+    justify-content: center;
+}
+
+.banniere {
+    object-fit: fill;
+    width: 100%;
+    padding-top: 30px;
+}
+
+.text-git {
+    margin-top: 3px;
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-bottom: 1px;
+    text-justify: auto;
+}
+
+.content {
+    margin: 1rem;
+}
+.repository-url {
+    color: #0366d6;
+    font-weight: bold;
+}
+.theme-toggle .theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    line-height: 34px;
+    color: #fff;
+}
+
+/* Hide default HTML checkbox */
+.theme-toggle input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+/* The slider */
+.theme-toggle .theme-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    border-radius: 34px;
+    white-space: nowrap;
+}
+
+.theme-toggle .theme-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.theme-toggle input:checked + .theme-slider {
+    background-color: #fff;
+}
+
+.theme-toggle input:focus + .theme-slider {
+    box-shadow: 0 0 1px #2196f3;
+    color: #000;
+}
+
+.theme-toggle input:checked + .theme-slider:before {
+    right: 4px;
+    left: auto;
+    background-color: #000;
+}
+
+.darkmode {
+    background-color: #2f3136;
+    color: white;
+    fill: white;
+}
+
+.darkmode .code-text{
+    color: black;
+}
+
+.theme-toggle {
+    background-color: #354a5f;
+    color: white;
+    padding: 0.3rem 0 1rem 1rem;
+}
+.banniere-container{
+    padding-top: 6rem;
+}
+
+.p-uml {
+    margin-top: 3rem;
+    font-family: "Hind Madurai";
+    justify-content: baseline;
+}
+
+.container-uml {
+    padding: 50px 1rem 50px 1rem;
+}
+
+#logo-uml {
+    width: 50%;
+    float: left;
+    margin-right: 1rem;
+}
+
+.img-uml {
+    width: 100%;
+}
+.darkmode img {
+    background-color: white;
+    padding-top: 2px;
+}
+h2{
+    font-family: "Hind Madurai";
+}
+h1 {
+    font-family: "Montserrat";
+}
+
+.uml-title{
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-family: "Montserrat";
+    margin-top: 5rem;
+}
+
+.p-merise {
+    margin-top: 3rem;
+    font-family: "Hind Madurai";
+    justify-content: baseline;
+}
+
+.container-merise {
+    padding: 10px 1rem 50px 1rem;
+}
+
+.img-merise {
+    width: 100%;
+    height: auto;
+}
+
+ul,
+li {
+    font-family: "Hind Madurai";
+    margin-top: 5px;
+}
+
+#logo-merise {
+    width: 200px;
+    float: left;
+}
+.merise-title{
+    margin-bottom: 130px;
+}
 @media screen and (min-width: 900px) {
     .navbar {
         text-align: center;
@@ -242,7 +453,7 @@ p {
         width: 200px;
     }
 
-    .text {
+    .text-main {
         display: flex;
         flex-wrap: wrap;
         gap: 20px 180px;
@@ -250,7 +461,7 @@ p {
         padding: 10px 4px 10px 4px;
     }
 
-    .text-part {
+    .text-part-main {
         width: 800px;
     }
 
@@ -258,5 +469,68 @@ p {
         margin-left: auto;
         padding-top: 15px;
         margin-right: 10px;
+    }
+    
+    .code-text {
+        margin-bottom: 1rem;
+    }
+
+    .banniere-container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .content {
+        margin-right: 20rem;
+        margin-left: 20rem;
+    }
+
+    .theme-toggle {
+        margin-left: auto;
+        padding-top: 15px;
+        margin-right: 10px;
+    }
+
+    #logo-uml{
+        margin-top: 5rem;
+        width: 30%;
+        border-radius: 20px;
+    }
+    .container-uml{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+
+    .img-uml{
+        width: 50%;
+        float: left;
+    }
+
+    .p-uml{
+        margin-left: 50%;
+        padding: 0 3rem 0 3rem ;
+    }
+
+
+    .img-merise {
+        width: 100%;
+        
+    }
+
+    .container-merise {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 2rem;
+        justify-content: center;
+        margin-left: 20rem;
+        margin-right: 20rem;
+    }
+
+    .merise-title{
+        margin-bottom: 10px;
     }
 }

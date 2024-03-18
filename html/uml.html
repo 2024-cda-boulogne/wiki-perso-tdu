@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="../css/uml.css" rel="stylesheet" />
+        <link href="../css/index.css" rel="stylesheet" />
         <title>Wiki perso</title>
     </head>
     <body>
@@ -17,6 +17,8 @@
                     >
                     <a class="links" href="../html/uml.html">UML</a>
                     <a class="links" href="../html/merise.html">Merise</a>
+                    <a class="links" id="about">A propos</a>
+
                     <div class="theme-toggle">
                         <label class="theme-label" for="theme-mode"
                             >Dark mode
@@ -64,11 +66,11 @@
                 </a>
             </nav>
         </header>
-        <div class="container">
+        <div class="container-uml">
             <img src="../img/UML_logo.png" id="logo-uml" alt="Logo de l'UML" />
             <section class="text">
-                <h1>Qu'est-ce que le langage UML ?</h1>
-                <p>
+                <h1 class="uml-title">Qu'est-ce que le langage UML ?</h1>
+                <p >
                     Le langage UML (Unified Modeling Language, ou langage de
                     modélisation unifié) a été pensé pour être un langage de
                     modélisation visuelle commun, et riche sémantiquement et
@@ -79,13 +81,13 @@
                     développement logiciel, notamment pour les flux de processus
                     dans l'industrie.
                 </p>
-                <p>
+                <p >
                     Il ressemble aux plans utilisés dans d'autres domaines et se
                     compose de différents types de diagrammes. Dans l'ensemble,
                     les diagrammes UML décrivent la limite, la structure et le
                     comportement du système et des objets qui s'y trouvent.
                 </p>
-                <p>
+                <p >
                     L'UML n'est pas un langage de programmation, mais il existe
                     des outils qui peuvent être utilisés pour générer du code en
                     plusieurs langages à partir de diagrammes UML. L'UML a une
@@ -101,7 +103,7 @@
                         class="img-uml"
                         alt="Diagramme de classe"
                     />
-                    <p>
+                    <p class="p-uml">
                         Diagramme de classes Diagramme UML le plus couramment
                         utilisé et fondement de toute solution orientée objet.
                         Classes d'un système, attributs et opérations, et
@@ -119,7 +121,7 @@
                         class="img-uml"
                         alt="Diagramme de cas d'utilisation"
                     />
-                    <p>
+                    <p class="p-uml">
                         Il représente une fonctionnalité spécifique dans un
                         système et est créé pour illustrer comment différentes
                         fonctionnalités sont interconnectées et montrer leurs
@@ -135,7 +137,7 @@
                         class="img-uml"
                         alt="Diagramme d'activité"
                     />
-                    <p>
+                    <p class="p-uml">
                         Flux de travail d'entreprise ou opérationnels
                         représentés graphiquement pour montrer l'activité de
                         chacune des composantes du système. Les diagrammes
@@ -152,7 +154,7 @@
                         class="img-uml"
                         alt="Diagramme de deploiement"
                     />
-                    <p>
+                    <p class="p-uml">
                         Illustre les infrastructures physique et logicielle d'un
                         système. Ils sont utiles lorsqu'une solution logicielle
                         est déployée sur de nombreuses machines avec des
@@ -168,7 +170,7 @@
                         class="img-uml"
                         alt="Diagramme de séquence"
                     />
-                    <p>
+                    <p class="p-uml">
                         Montre comment les objets interagissent les uns avec les
                         autres et dans quel ordre. Ils représentent les
                         interactions d'un scénario particulier
@@ -176,6 +178,38 @@
                 </article>
             </section>
         </div>
+        <dialog id="favDialog">
+            <div class="picture">
+                <div class="picture-content">
+                    <figure>
+                        <img
+                            src="../img/20240311_102232.jpg"
+                            alt="Portrait du GOAT"
+                        />
+                        <figcaption>Théo Duflos</figcaption>
+                    </figure>
+                    <p >
+                        Nationalité : Française
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="8"
+                        >
+                            <rect width="12" height="8" fill="#ED2939" />
+                            <rect width="8" height="8" fill="#fff" />
+                            <rect width="4" height="8" fill="#002395" />
+                        </svg>
+                    </p>
+                    <p >Date de Naissance :</p>
+                    <p class="date-text">07 Juin 2001 (22 ans)</p>
+                    <br />
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="btn-modal">Fermer</button>
+            </div>
+            
+        </dialog>
         <script src="../js/index.js"></script>
     </body>
 </html>

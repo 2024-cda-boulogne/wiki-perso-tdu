@@ -31,3 +31,16 @@ function setThemeByLocalStorage() {
         x.classList.remove("darkmode");
     }
 }
+
+
+const showNumber = document.getElementById('about');
+const favDialog = document.getElementById('favDialog');
+const btnModal = document.querySelector('.btn-modal');
+showNumber.addEventListener('click', () => {
+  favDialog.showModal();
+});
+
+btnModal.addEventListener('click', () => {
+  favDialog.close();
+});
+

@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link href="../css/merise.css" rel="stylesheet" />
+        <link href="../css/index.css" rel="stylesheet" />
         <title>Wiki perso</title>
     </head>
     <body>
@@ -17,10 +17,12 @@
                     >
                     <a class="links" href="../html/uml.html">UML</a>
                     <a class="links" href="../html/merise.html">Merise</a>
+                    <a class="links" id="about">A propos</a>
+
                     <div class="theme-toggle">
                         <label class="theme-label" for="theme-mode"
                             >Dark mode
-    
+
                             <span class="theme-switch">
                                 <input
                                     type="checkbox"
@@ -33,7 +35,6 @@
                     </div>
                 </div>
 
-                
                 <a href="javascript:void(0);" class="icon" onclick="openMenu()">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -64,16 +65,16 @@
                 </a>
             </nav>
         </header>
-        <div class="container">
+        <div class="container-merise">
             <img
                 src="../img/merise.png"
                 id="logo-merise"
                 alt="Logo de la méthode merise"
             />
             <section>
-                <h1>La méthode Merise</h1>
+                <h1 class="merise-title">La méthode Merise</h1>
                 <h3>Qu'est ce que la méthode Merise?</h3>
-                <p>
+                <p class="p-merise">
                     La méthode Merise est une approche de modélisation de
                     système d'information qui a été largement utilisée dans les
                     années 1970 et 1980. Elle se concentre sur la structuration
@@ -92,12 +93,12 @@
                     alt="Dictionnaire de données"
                     class="img-merise"
                 />
-                <p>
+                <p class="p-merise">
                     C'est une étape intermédiaire qui peut avoir son importance,
                     surtout si vous êtes plusieurs à travailler sur une même
                     base de données, d'un volume important.
                 </p>
-                <p>
+                <p class="p-merise">
                     Le dictionnaire des données est un document qui regroupe
                     toutes les données que vous aurez à conserver dans votre
                     base (et qui figureront donc dans le MCD). Pour chaque
@@ -160,9 +161,9 @@
                     </li>
                 </ul>
                 &nbsp;
-                <hr>
+                <hr />
             </section>
-         
+
             <section>
                 <h3>Modèle conceptuel de données (MCD)</h3>
                 <img
@@ -170,33 +171,33 @@
                     alt="Exemple de modéle conceptuel de données"
                     class="img-merise"
                 />
-                <p>
+                <p class="p-merise">
                     Le Modèle Conceptuel de Données (MCD) est une composante
                     essentielle de la méthode Merise en ingénierie des systèmes
                     d'information. Il offre une représentation abstraite et
                     structurée des données, mettant en lumière les entités,
                     leurs attributs et les relations les liant.
                 </p>
-                <p>
+                <p class="p-merise">
                     Grâce à sa clarté et sa concision, le MCD permet aux
                     analystes et aux développeurs de comprendre rapidement la
                     structure et les interactions des données au sein du
                     système.
                 </p>
-                <p>
+                <p class="p-merise">
                     En intégrant des concepts tels que les entités, les
                     associations, les cardinalités et les dépendances
                     fonctionnelles, le MCD fournit un cadre solide pour
                     concevoir des bases de données efficaces et évolutives.
                 </p>
-                <p>
+                <p class="p-merise">
                     Il garantit ainsi la cohérence et l'intégrité des données
                     tout au long du cycle de vie du projet, assurant une gestion
                     optimale des informations et une meilleure prise de
                     décision.
                 </p>
                 &nbsp;
-                <hr>
+                <hr />
             </section>
             <section>
                 <h3>Modèle logique de données (MLD)</h3>
@@ -205,7 +206,7 @@
                     alt="Exemple de passage d'un MCD à un MLD"
                     class="img-merise"
                 />
-                <p>
+                <p class="p-merise">
                     Une fois le Modèle Conceptuel de Données (MCD) établi, la
                     méthode Merise poursuit avec le Modèle Logique de Données
                     (MLD). Ce dernier représente une étape cruciale dans le
@@ -213,14 +214,14 @@
                     les concepts abstraits du MCD en structures de données plus
                     concrètes, généralement sous forme de schémas relationnels.
                 </p>
-                <p>
+                <p class="p-merise">
                     Le passage du MCD au MLD implique une transformation des
                     entités en tables, des attributs en colonnes et des
                     associations en clés étrangères. Les cardinalités définies
                     dans le MCD orientent également la création des relations et
                     des contraintes d'intégrité dans le MLD.
                 </p>
-                <p>
+                <p class="p-merise">
                     insi, le MLD constitue une étape de raffinement du modèle
                     conceptuel, où les détails techniques et les spécificités de
                     la base de données sont pris en compte. Cette transition
@@ -230,7 +231,7 @@
                     informatique.
                 </p>
                 &nbsp;
-                <hr>
+                <hr />
             </section>
             <section>
                 <h3>Modèle physique de données (MPD)</h3>
@@ -239,7 +240,7 @@
                     class="img-merise"
                     alt="Modèle physique de données"
                 />
-                <p>
+                <p class="p-merise">
                     Après la réalisation du Modèle Logique de Données (MLD), la
                     méthode Merise poursuit avec la conception du Modèle
                     Physique de Données (MPD). Contrairement au MLD, qui reste
@@ -248,7 +249,7 @@
                     mise en œuvre concrète des structures de données dans un
                     environnement spécifique.
                 </p>
-                <p>
+                <p class="p-merise">
                     Le MPD traduit les structures définies dans le MLD en un
                     schéma de base de données réel, prenant en compte les
                     caractéristiques et les contraintes propres au SGBD
@@ -257,7 +258,7 @@
                     d'intégrité et d'autres paramètres de configuration
                     spécifiques au SGBD.
                 </p>
-                <p>
+                <p class="p-merise">
                     Cette étape de conception détaillée garantit une
                     implémentation efficace et optimisée de la base de données,
                     en tenant compte des performances, de la sécurité et de la
@@ -267,6 +268,37 @@
                 </p>
             </section>
         </div>
+        <dialog id="favDialog">
+            <div class="picture">
+                <div class="picture-content">
+                    <figure>
+                        <img
+                            src="../img/20240311_102232.jpg"
+                            alt="Portrait du GOAT"
+                        />
+                        <figcaption>Théo Duflos</figcaption>
+                    </figure>
+                    <p class="p-merise">
+                        Nationalité : Française
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="8"
+                        >
+                            <rect width="12" height="8" fill="#ED2939" />
+                            <rect width="8" height="8" fill="#fff" />
+                            <rect width="4" height="8" fill="#002395" />
+                        </svg>
+                    </p>
+                    <p class="p-merise">Date de Naissance :</p>
+                    <p class="date-text">07 Juin 2001 (22 ans)</p>
+                    <br />
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="btn-modal">Fermer</button>
+            </div>
+        </dialog>
         <script src="../js/index.js"></script>
     </body>
 </html>
