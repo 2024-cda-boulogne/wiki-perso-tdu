@@ -175,7 +175,6 @@ h2{
     .navbar #links {
         display: flex;
         color: white;
-        padding: 10px 16px;
         text-decoration: none;
         font-size: 17px;
     }
@@ -186,6 +185,7 @@ h2{
 
     .navbar #links a {
         padding-right: 70px;
+        padding-top: 22px;
     }
 
     #logo-uml{
