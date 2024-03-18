@@ -398,8 +398,10 @@ h3 {
 }
 
 .img-merise {
-    width: 390px;
+    width: 370px;
     height: 300px;
+    margin: auto;
+    display: block;
 }
 
 ul,
@@ -456,6 +458,7 @@ li {
     .text-main {
         display: flex;
         flex-wrap: wrap;
+        justify-content: center;
         gap: 20px 180px;
         text-justify: auto;
         padding: 10px 4px 10px 4px;
