@@ -206,6 +206,7 @@ p {
 
 @media screen and (min-width: 900px) {
     .navbar {
+        text-align: center;
         display: flex;
         justify-content: center;
         background-color: #354a5f;
@@ -224,7 +225,7 @@ p {
     .navbar #links {
         display: flex;
         color: white;
-        padding: 10px 16px;
+        padding: 12px 16px;
         text-decoration: none;
         font-size: 17px;
     }
@@ -244,7 +245,6 @@ p {
     .text {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
         gap: 20px 180px;
         text-justify: auto;
         padding: 10px 4px 10px 4px;
@@ -256,7 +256,7 @@ p {
 
     .theme-toggle {
         margin-left: auto;
-        padding-top: 10px;
+        padding-top: 15px;
         margin-right: 10px;
     }
 }

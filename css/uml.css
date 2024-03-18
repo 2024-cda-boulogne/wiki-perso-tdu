@@ -151,6 +151,9 @@ p {
     padding: 0.3rem 0 1rem 1rem;
 }
 
+h2{
+    font-family: "Hind Madurai";
+}
 
 @media screen and (min-width: 900px) {
     .navbar {
@@ -211,7 +214,7 @@ p {
 
     .theme-toggle {
         margin-left: auto;
-        padding-top: 10px;
+        padding-top: 15px;
         margin-right: 10px;
     }
 }
