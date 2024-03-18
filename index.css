@@ -6,11 +6,11 @@ body {
 
 @font-face {
     font-family: "Montserrat";
-    src: url(../font/Montserrat-VariableFont_wght.ttf);
+    src: url(font/Montserrat-VariableFont_wght.ttf);
 }
 @font-face {
     font-family: "Hind Madurai";
-    src: url(../font/HindMadurai-Regular.ttf);
+    src: url(font/HindMadurai-Regular.ttf);
 }
 
 .navbar {
