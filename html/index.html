@@ -17,10 +17,11 @@
                     >
                     <a class="links" href="../html/uml.html">UML</a>
                     <a class="links" href="../html/merise.html">Merise</a>
+                    <a class="links" id="about">A propos</a>
                     <div class="theme-toggle">
                         <label class="theme-label" for="theme-mode"
                             >Dark mode
-    
+
                             <span class="theme-switch">
                                 <input
                                     type="checkbox"
@@ -32,7 +33,7 @@
                         </label>
                     </div>
                 </div>
-                
+
                 <a href="javascript:void(0);" class="icon" onclick="openMenu()">
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -63,36 +64,11 @@
                 </a>
             </nav>
         </header>
-        <div class="container">
-            <h1 class="titre">Acceuil</h1>
-            <div class="picture">
-                <div class="picture-content">
-                    <figure>
-                        <img
-                            src="../img/20240311_102232.jpg"
-                            alt="Portrait du GOAT"
-                        />
-                        <figcaption>Théo Duflos</figcaption>
-                    </figure>
-                    <p>
-                        Nationalité : Française
-                        <svg
-                            xmlns="http://www.w3.org/2000/svg"
-                            width="12"
-                            height="8"
-                        >
-                            <rect width="12" height="8" fill="#ED2939" />
-                            <rect width="8" height="8" fill="#fff" />
-                            <rect width="4" height="8" fill="#002395" />
-                        </svg>
-                    </p>
-                    <p>Date de Naissance :</p>
-                    <p class="date-text">07 Juin 2001 (22 ans)</p>
-                    <br />
-                </div>
-            </div>
-            <div class="text">
-                <div class="text-part">
+        <div class="container-main">
+            <h1 class="titre-main">Acceuil</h1>
+
+            <div class="text-main">
+                <div class="text-part-main">
                     <div class="icon-acceuil-content">
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -140,7 +116,7 @@
                             />
                         </svg>
                     </div>
-                    <h3 class="title-content">Github</h3>
+                    <h3 class="title-content-main">Github</h3>
                     <hr />
                     <p>
                         Bienvenue sur Yoko Wiki, votre guide décontracté pour
@@ -154,7 +130,7 @@
                         conflict" !
                     </p>
                 </div>
-                <div class="text-part">
+                <div class="text-part-main">
                     <div class="icon-acceuil-content">
                         <svg
                             width="80px"
@@ -202,9 +178,9 @@
                             />
                         </svg>
                     </div>
-                    <h3 class="title-content">UML</h3>
+                    <h3 class="title-content-main">UML</h3>
+                
                     <hr />
-
                     <p>
                         Si vous avez déjà eu l'impression que l'UML était une
                         danse étrange, détendez-vous. Notre section sur les
@@ -215,7 +191,7 @@
                         code une véritable chorégraphie compréhensible !
                     </p>
                 </div>
-                <div class="text-part">
+                <div class="text-part-main">
                     <div class="icon-acceuil-content">
                         <svg
                             width="80px"
@@ -275,7 +251,7 @@
                             />
                         </svg>
                     </div>
-                    <h3 class="title-content">Merise</h3>
+                    <h3 class="title-content-main">Merise</h3>
                     <hr />
 
                     <p>
@@ -287,7 +263,7 @@
                         que de déguster votre plat préféré.
                     </p>
                 </div>
-                <div class="text-part">
+                <div class="text-part-main">
                     <div class="icon-acceuil-content">
                         <svg
                             width="80px"
@@ -319,7 +295,7 @@
                             />
                         </svg>
                     </div>
-                    <h3 class="title-content">Have Fun</h3>
+                    <h3 class="title-content-main">Have Fun</h3>
 
                     <hr />
                     <p>
@@ -332,6 +308,39 @@
                 </div>
             </div>
         </div>
+        <dialog id="favDialog">
+            <div class="picture-about">
+                <div class="picture-content-about">
+                    <figure>
+                        <img
+                            src="../img/20240311_102232.jpg"
+                            class="img-about"
+                            alt="Portrait du GOAT"
+                        />
+                        <figcaption>Théo Duflos</figcaption>
+                    </figure>
+                    <p>
+                        Nationalité : Française
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="12"
+                            height="8"
+                        >
+                            <rect width="12" height="8" fill="#ED2939" />
+                            <rect width="8" height="8" fill="#fff" />
+                            <rect width="4" height="8" fill="#002395" />
+                        </svg>
+                    </p>
+                    <p>Date de Naissance :</p>
+                    <p class="date-text">07 Juin 2001 (22 ans)</p>
+                    <br />
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="btn-modal">Fermer</button>
+            </div>
+            
+        </dialog>
         <script src="../js/index.js"></script>
     </body>
 </html>
