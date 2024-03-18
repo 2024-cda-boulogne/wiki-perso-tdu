@@ -1,3 +1,7 @@
+document
+    .querySelector("#burgermenu")
+    .addEventListener("click", openMenu);
+
 function openMenu() {
     const x = document.getElementById("links");
     if (x.style.display === "block") {
